@@ -1,9 +1,8 @@
 let herois = ["Nébula Prisma", "Ecos da Eternidade", "Arqueiro Fantasma", "Maré Luminescente", "Guardião Espectral", "Astrael Serafim"];
 let xpHeroi = [ 1500, 3500, 6000, 7500, 9500, 11000]; 
 
-let i = -1;
+let i = 0;
 while (i < herois.length) {
-    i++
     let nome = herois[i];
     let xp = xpHeroi[i];
     let nivel;
@@ -41,6 +40,8 @@ while (i < herois.length) {
             nivel = "Radiante";
             break;
     }
+
+    i++
 
     console.log(`O Herói de nome ${nome} está no nível de ${nivel}!`)
     // console.log("O Herói " + nome + " está no nível de " + nivel + "!");
